@@ -1,0 +1,67 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++.exe build active file", //任务的名字，就是刚才在命令面板中选择的时候所看到的，可以自己设置
+            "command": "D:\\Program\\msys2\\mingw64\\bin\\g++.exe",
+            "args": [ //编译时候的参数、
+                "-g", //添加gdb调试选项,添加调试信息
+                // "-Wall", //打印警告信息
+                "-w", //关闭警告信息
+                //OpenCV
+                // "-I",
+                // "E:/package/OpenCV-MinGW/include",
+                // "-L",
+                // "E:/package/OpenCV-MinGW/x64/mingw/bin",
+                // "-l",
+                // "libopencv_calib3d452",
+                // "-l",
+                // "libopencv_core452",
+                // "-l",
+                // "libopencv_dnn452",
+                // "-l",
+                // "libopencv_features2d452",
+                // "-l",
+                // "libopencv_flann452",
+                // "-l",
+                // "libopencv_gapi452",
+                // "-l",
+                // "libopencv_highgui452",
+                // "-l",
+                // "libopencv_imgcodecs452",
+                // "-l",
+                // "libopencv_imgproc452",
+                // "-l",
+                // "libopencv_ml452",
+                // "-l",
+                // "libopencv_objdetect452",
+                // "-l",
+                // "libopencv_photo452",
+                // "-l",
+                // "libopencv_stitching452",
+                // "-l",
+                // "libopencv_video452",
+                // "-l",
+                // "libopencv_videoio452",
+                // "-l",
+                // "opencv_videoio_ffmpeg452_64",
+                //以上opencvc
+                "-o2",
+                "-std=c++20", //指定标准
+                "${file}",
+                "-o", //指定生成可执行文件的名称
+                "E:\\CPP in vscode\\out\\${fileBasenameNoExtension}.exe", //生成路径
+            ],
+            "options": {
+                "cwd": "D:\\Program\\msys2\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+{"name":"Local: practice","url":"e:\\CPP in vscode\\practice.cpp","tests":[{"id":1691249615403,"input":"3\n@-@\n---\n@@-\n@-@\n@--\n--@","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CPP in vscode\\practice.cpp","group":"local","local":true}
