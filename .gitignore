@@ -1,0 +1,4 @@
+.clang-format
+CPH/
+out/
+.vscode/
