@@ -5,8 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "D:/Program/msys2/mingw64/include",
-                "D:/Program/msys2/mingw64/include/c++/13.1.0/x86_64-w64-mingw32",
-                "E:/package/OpenCV-MinGW/include"
+                "E:/package/OpenCV-MinGW/include",
+                "E:\\package\\boost_1_82_0"
             ],
             "defines": [
                 "_DEBUG",

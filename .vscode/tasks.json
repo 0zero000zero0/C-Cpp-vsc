@@ -48,12 +48,17 @@
                 // "libopencv_videoio452",
                 // "-l",
                 // "opencv_videoio_ffmpeg452_64",
-                //以上opencvc
+                //opencv END
                 "-o2",
                 "-std=c++20", //指定标准
                 "${file}",
+                //boost库
+                // "-I",
+                // "E:\\package\\boost_1_82_0",
+                // //boost库end
                 "-o", //指定生成可执行文件的名称
-                "E:\\CPP in vscode\\out\\${fileBasenameNoExtension}.exe", //生成路径
+                // "E:\\CPP in vscode\\out\\${fileBasenameNoExtension}.exe", //生成路径
+                "E:\\CPP in vscode\\out\\a.exe", //生成路径,为了避免中文路径,统一采用a.exe
             ],
             "options": {
                 "cwd": "D:\\Program\\msys2\\mingw64\\bin"
